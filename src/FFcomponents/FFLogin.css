@@ -9,8 +9,6 @@
 .login-title {
   display: block;
   margin: 10vh auto 25vh;
-  
-  font-style: normal;
   font-weight: bold;
   font-size: 60px;
   line-height: 60px;
@@ -18,38 +16,43 @@
 }
 
 form {
+  margin: 0 auto;
   text-align: center;
 }
 
 .login-input-fields {
   box-sizing: border-box;
-  width: 400px;
-  margin: 8vh auto 0;
-  text-align: right;
+  display: flex;
+  width: 45vw;
+  margin-top: 8vh;
+  align-items: center;
 }
 
 label {
   text-align: right;
   font-style: normal;
   font-weight: normal;
-  display: inline-block;
+  line-height: 30px;
   font-size: 30px;
-  margin-right: 5%;
+  padding-right: 5%;
+  display: block;
+  box-sizing: border-box;
+  width: 22vw;
 }
 
 input {
   background: linear-gradient(0deg, #FFFBFB, #FFFBFB), #FFFBFB;
   border: 1px solid #FFFBFB;
-  display: inline-block;
+  display: block;
   box-sizing: border-box;
-  width: 250px;
-  height: 56px;
+  width: 230px;
+  height: 50px;
   font-size: large;
+  margin: 0;
 }
 
 .forgot-password {
-  position: relative;
+  position: fixed;
   font-weight: 300;
-  padding-left: 2vw;
-  margin-top: 10px;
+  margin: 10px 0 0 22vw;
 }

@@ -30,32 +30,33 @@ const FFSignUp = ({ isLoading, setIsLoading, error, setError, role, setRole }) =
     <div className="sign-up">
       <span className="sign-up-title">
         <div className="create">CREATE</div>
-        <div className="FF">FATIHFUL FRIEND</div>
+        <div className="FF-account">
+        <div className="FF">FAITHFUL FRIEND</div>
         <div className="account">account</div>
+        </div>
       </span>
 
       <form onSubmit={handleSignUp}>
-        <div className="input-fields">
+        <div className="sign-up-input-fields">
           <label>email</label>
           <input type="email" onChange={e => setEmail(e.target.value)} />
         </div>
-        <div className="input-fields">
+        <div className="sign-up-input-fields">
           <label>password</label>
           <input type="password" onChange={e => setPassword(e.target.value)} />
         </div>
-        <div className="input-fields">
+        <div className="sign-up-input-fields">
           <label>re-enter password</label>
           <input type="password" onChange={e => setPassword(e.target.value)} />
         </div>
-        <div className="input-fields">
+        <div className="sign-up-input-fields">
           <label>your name</label>
           <input type="name" onChange={e => setName(e.target.value)} />
         </div>
-        <div className="input-fields">
-          <label>who told you about this site</label>
+        <div className="sign-up-input-fields">
+          <label>who told you <br></br>about this site</label>
           <input type="text" onChange={e => setName(e.target.value)} />
         </div>
-        <button type="submit">Create account</button> 
       </form>
     </div>
   )
