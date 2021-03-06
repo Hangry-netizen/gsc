@@ -1,27 +1,50 @@
 import React, { useState } from 'react';
+import { Alert } from 'react-bootstrap';
 import { useAuth } from '../contexts/AuthContext'
+import { useHistory } from "react-router-dom";
 
 import './FFSignUp.css'
 
-const FFSignUp = ({ isLoading, setIsLoading, error, setError, role, setRole }) => {
+const FFSignUp = ({ role, setRole }) => {
+  const history = useHistory()
   const { signup, verification } = useAuth()
 
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
+  const [reEnterPassword, setReEnterPassword] = useState("")
+  const [referral, setReferral] =useState("")
+  const [isLoading, setIsLoading] = useState("")
+  const [message, setMessage] = useState("")
+  const [error, setError] = useState("")
+
 
   async function handleSignUp(e) {
     e.preventDefault()
+
+    if (email === "") {
+      return setError ('Email is required')
+    } else if (password !== reEnterPassword) {
+      return setError ('Passwords do not match')
+    } else if (name === "") {
+      return setError ('Name is required')
+    } else if (referral === "") {
+      return setError ('Referral is required')
+    }
+
     console.log("submitted sign up")
+
     try {
+      setError("")
       setIsLoading(true)
-      await signup(email, password, name)
+      await signup(email, password, name, referral)
       await verification().then(function () {
         setRole("FF")
-        console.log("Verification email sent")
+        setMessage("Signed up successfully")
+        history.push("/")
       })
     } catch {
-      setError("Failed to sign up")
+      setError("Failed to create an account")
     }
     setIsLoading(false)
   }
@@ -35,7 +58,8 @@ const FFSignUp = ({ isLoading, setIsLoading, error, setError, role, setRole }) =
         <div className="account">account</div>
         </div>
       </span>
-
+      {message && <Alert variant="success">{message}</Alert>}
+      {error && <Alert variant="danger">{error}</Alert>}
       <form onSubmit={handleSignUp}>
         <div className="sign-up-input-fields">
           <label>email</label>
@@ -47,7 +71,7 @@ const FFSignUp = ({ isLoading, setIsLoading, error, setError, role, setRole }) =
         </div>
         <div className="sign-up-input-fields">
           <label>re-enter password</label>
-          <input type="password" onChange={e => setPassword(e.target.value)} />
+          <input type="password" onChange={e => setReEnterPassword(e.target.value)} />
         </div>
         <div className="sign-up-input-fields">
           <label>your name</label>
@@ -55,8 +79,9 @@ const FFSignUp = ({ isLoading, setIsLoading, error, setError, role, setRole }) =
         </div>
         <div className="sign-up-input-fields">
           <label>who told you <br></br>about this site</label>
-          <input type="text" onChange={e => setName(e.target.value)} />
+          <input type="text" onChange={e => setReferral(e.target.value)} />
         </div>
+        <button disabled={isLoading} type="submit"></button>
       </form>
     </div>
   )

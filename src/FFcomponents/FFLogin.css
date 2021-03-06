@@ -18,6 +18,7 @@
 form {
   margin: 0 auto;
   text-align: center;
+  height: 200px; 
 }
 
 .login-input-fields {
@@ -52,7 +53,19 @@ input {
 }
 
 .forgot-password {
-  position: fixed;
-  font-weight: 300;
-  margin: 10px 0 0 22vw;
+  position: relative;
+  margin-left: 24vw;
+  color: inherit;
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+  color: inherit;
+}
+
+button {
+  background-color: transparent;
+  margin: 100px;
+  border: none;
 }

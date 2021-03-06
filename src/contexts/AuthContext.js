@@ -20,7 +20,7 @@ export function AuthProvider({ children }) {
             const childNode = user.uid
             usersRef.child(childNode).set({
                 name,
-                email,
+                email
             })
         })
     }
