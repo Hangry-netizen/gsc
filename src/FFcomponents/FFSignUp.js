@@ -62,26 +62,26 @@ const FFSignUp = ({ role, setRole }) => {
       {error && <Alert variant="danger">{error}</Alert>}
       <form onSubmit={handleSignUp}>
         <div className="sign-up-input-fields">
-          <label>email</label>
-          <input type="email" onChange={e => setEmail(e.target.value)} />
+          <label className="labels">email</label>
+          <input className="sign-up-input" type="email" onChange={e => setEmail(e.target.value)} />
         </div>
         <div className="sign-up-input-fields">
-          <label>password</label>
-          <input type="password" onChange={e => setPassword(e.target.value)} />
+          <label className="labels">password</label>
+          <input className="sign-up-input" type="password" onChange={e => setPassword(e.target.value)} />
         </div>
         <div className="sign-up-input-fields">
-          <label>re-enter password</label>
-          <input type="password" onChange={e => setReEnterPassword(e.target.value)} />
+          <label className="labels">re-enter password</label>
+          <input className="sign-up-input" type="password" onChange={e => setReEnterPassword(e.target.value)} />
         </div>
         <div className="sign-up-input-fields">
-          <label>your name</label>
-          <input type="name" onChange={e => setName(e.target.value)} />
+          <label className="labels">your name</label>
+          <input className="sign-up-input" type="name" onChange={e => setName(e.target.value)} />
         </div>
         <div className="sign-up-input-fields">
-          <label>who told you <br></br>about this site</label>
-          <input type="text" onChange={e => setReferral(e.target.value)} />
+          <label className="labels">who told you <br></br>about this site</label>
+          <input className="sign-up-input" type="text" onChange={e => setReferral(e.target.value)} />
         </div>
-        <button disabled={isLoading} type="submit"></button>
+        <button className="hidden-submit-btn" disabled={isLoading} type="submit"></button>
       </form>
     </div>
   )

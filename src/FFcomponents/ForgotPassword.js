@@ -28,19 +28,19 @@ const ForgotPassword = () => {
   }
 
   return (
-    <div className="forgot-password-container">
+    <div id="forgot-password-container">
       <div id="forgot-password-title">RESET PASSWORD</div>
       {error && <Alert variant="danger">{error}</Alert>}
       {message && <Alert variant="success">{message}</Alert>}
-      <form onSubmit={handleSubmit}>
-        <div className="forgot-password-input-field">
-          <label>email</label>
-          <input type="email" onChange={e => setEmail(e.target.value)} />
+      <form id="forgot-password-form" onSubmit={handleSubmit}>
+        <div className="forgot-password-input-fields">
+          <label className="forgot-password-label">email</label>
+          <input className="forgot-password-input" type="email" onChange={e => setEmail(e.target.value)} />
         </div>
-        <button disabled={isLoading} type="submit"></button>
+        <button className="red-submit-btn" disabled={isLoading} type="submit">Submit</button>
       </form>
-      <div>
-        <Link className="login" to="/login">Login</Link>
+      <div id="login-link-div">
+        <Link id="login-link" to="/login">login</Link>
       </div>
     </div>
   )

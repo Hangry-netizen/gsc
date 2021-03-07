@@ -1,4 +1,4 @@
-.login-container {
+#login-container {
   display: block;
   background-color: #1e365c;
   color: #e9482b;
@@ -6,7 +6,7 @@
   height: 100vh;
 }
 
-.login-title {
+#login-title {
   display: block;
   margin: 10vh auto 25vh;
   font-weight: bold;
@@ -15,21 +15,21 @@
   text-align: center;
 }
 
-form {
+#login-form {
   margin: 0 auto;
   text-align: center;
-  height: 200px; 
+  height: 190px;
 }
 
 .login-input-fields {
   box-sizing: border-box;
   display: flex;
   width: 45vw;
-  margin-top: 8vh;
+  margin-top: 60px;
   align-items: center;
 }
 
-label {
+.labels {
   text-align: right;
   font-style: normal;
   font-weight: normal;
@@ -41,7 +41,7 @@ label {
   width: 22vw;
 }
 
-input {
+.login-inputs {
   background: linear-gradient(0deg, #FFFBFB, #FFFBFB), #FFFBFB;
   border: 1px solid #FFFBFB;
   display: block;
@@ -52,19 +52,21 @@ input {
   margin: 0;
 }
 
-.forgot-password {
+#forgot-password-link {
+  font-size: 25px;
+  font-weight: 300;
   position: relative;
-  margin-left: 24vw;
+  margin-left: 22vw;
   color: inherit;
   text-decoration: none;
 }
 
-.forgot-password:hover {
+#forgot-password-link:hover {
   text-decoration: underline;
   color: inherit;
 }
 
-button {
+.hidden-submit-btn {
   background-color: transparent;
   margin: 100px;
   border: none;

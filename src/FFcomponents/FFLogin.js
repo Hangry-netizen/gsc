@@ -36,22 +36,22 @@ const FFLogin = ({ role, setRole }) => {
   }
 
   return (
-    <div className="login-container">
-      <div className="login-title">LOGIN</div>
+    <div id="login-container">
+      <div id="login-title">LOGIN</div>
       {error && <Alert variant="danger">{error}</Alert>}
-      <form onSubmit={handleLogin}>
+      <form id="login-form" onSubmit={handleLogin}>
         <div className="login-input-fields">
-          <label>email</label>
-          <input type="email" onChange={e => setEmail(e.target.value)} />
+          <label className="labels">email</label>
+          <input className="login-inputs" type="email" onChange={e => setEmail(e.target.value)} />
         </div>
         <div className="login-input-fields">
-          <label>password</label>
-          <input type="password" onChange={e => setPassword(e.target.value)} />
+          <label className="labels">password</label>
+          <input className="login-inputs" type="password" onChange={e => setPassword(e.target.value)} />
         </div>
-        <button disabled={isLoading} type="submit"></button>
+        <button className="hidden-submit-btn" disabled={isLoading} type="submit"></button>
       </form>
-      <div>
-      <Link className="forgot-password" to="/forgot-password">forgot password?</Link>
+      <div id="forgot-password-link-div">
+        <Link id="forgot-password-link" to="/forgot-password">forgot password?</Link>
       </div>
     </div>
   )
