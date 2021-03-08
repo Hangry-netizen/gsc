@@ -1,38 +1,67 @@
-.App {
+body {
+  font-family: Josefin Sans;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.semibold {
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bg-blue {
+  background-color: #1e365c;
+}
+
+.bg-beach {
+  background-color: #fad4cd;
+}
+
+.color-blue {
+  color: #1e365c;
+}
+
+.color-red {
+  color: #e9482b;
+}
+
+.color-grey {
+  color: #cccccc;
+}
+
+.text-align-left {
+  text-align: left;
+}
+
+.text-align-center {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.text-align-right {
+  text-align: right;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Essays1743 {
+  font-family: Essays1743;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Essays1743-bold {
+  font-family: Essays1743 Bold;
 }
 
-.App-link {
-  color: #61dafb;
+.Essays1743-italic {
+  font-family: Essays1743 Italic;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Essays1743-bold-italic {
+  font-family: Essays1743 Bold Italic;
 }
