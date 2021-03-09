@@ -1,5 +1,14 @@
 body {
   font-family: Josefin Sans;
+  font-size: 30px;
+}
+
+.font-size-small {
+  font-size: 16px;
+}
+
+.font-size-large {
+  font-size: 32px;
 }
 
 .light {
@@ -18,12 +27,22 @@ body {
   font-style: italic;
 }
 
+.padding-left {
+  padding-left: 2vw;
+}
+
 .bg-blue {
   background-color: #1e365c;
+  padding: 1vw 3vw;
 }
 
 .bg-beach {
   background-color: #fad4cd;
+  padding: 1vw 3vw;
+}
+
+.bg-red {
+  color: #e9482b;
 }
 
 .color-blue {
@@ -34,8 +53,19 @@ body {
   color: #e9482b;
 }
 
+.color-beach {
+  color: #fad4cd;
+}
+
 .color-grey {
   color: #cccccc;
+}
+
+.red-button {
+  background-color: #e9482b;
+  color: #1e365c;
+  font-weight: bold;
+  border: none;
 }
 
 .text-align-left {
