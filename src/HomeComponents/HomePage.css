@@ -1,0 +1,75 @@
+#Step1, #Step2, #Step3, #Step4, #Step5, #AFewWords, #Resources, #SingleCommunities, #Question {
+  padding: 50px 90px;
+}
+
+#Step1-title, #Step2-title, #Step3-title, #Step4-title, #Step5-title {
+  margin-bottom: 5px;
+}
+
+#for-people {
+  margin-top: 10px;
+  line-height: 35px;
+}
+#start-now-btn {
+  margin: 10px auto 5px 40px;
+  width: 350px;
+  height: 85px;
+  font-size: 40px;
+  border: 1px solid #E9482B;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#resources-btn {
+  margin-top: 20px;
+  width: 280px;
+  height: 70px;
+  font-size: 30px;
+  border: 1px solid #E9482B;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#a-few-words-link {
+  position: relative;
+  margin-left: 497px;
+}
+
+#links-in-a-few-words {
+  line-height: 32px;
+}
+
+#single-communities-input {
+  width: 230px;
+  height: 34px;
+  background: linear-gradient(0deg, #FFFBFB, #FFFBFB), #FFFBFB;
+  border: 1px solid #FFFBFB;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 15px;
+}
+
+#single-communities-input:focus {
+  outline: #fad4cd;
+}
+
+#single-communities-form-submit-btn {
+  width: 110px;
+  height: 34px;
+  background: linear-gradient(0deg, #fad4cd, #fad4cd), #fad4cd;
+  border: 1px solid #fad4cd;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 15px;
+  letter-spacing: 2px;
+}
+
+#send-us-an-email-btn {
+  width: 320px;
+  height: 63px;
+  background: linear-gradient(0deg, #FFFBFB, #FFFBFB), #FFFBFB;
+  border: 1px solid #FFFBFB;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 24px;
+}

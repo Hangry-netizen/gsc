@@ -12,4 +12,24 @@ code {
     monospace;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@font-face {
+  font-family: 'Essays1743';
+  src: local('Essays1743'), url(./fonts/Essays1743.ttf) format('truetype')
+}
+
+@font-face {
+  font-family: 'Essays1743 Bold';
+  src: local('Essays1743'), url(./fonts/Essays1743-Bold.ttf) format('truetype')
+}
+
+@font-face {
+  font-family: 'Essays1743 Italic';
+  src: local('Essays1743'), url(./fonts/Essays1743-Italic.ttf) format('truetype')
+}
+
+@font-face {
+  font-family: 'Essays1743 Bold Italic';
+  src: local('Essays1743'), url(./fonts/Essays1743-BoldItalic.ttf) format('truetype')
+}

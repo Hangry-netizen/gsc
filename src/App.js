@@ -4,6 +4,7 @@ import './App.css';
 import HomePage from './pages/HomePage'
 import FFLoginPage from './pages/FFLoginPage'
 import ForgotPasswordPage from "./pages/ForgotPasswordPage"
+import './App.css';
 
 function App() {
   const [role, setRole] = useState("")
