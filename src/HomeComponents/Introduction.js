@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Introduction() {
   return (
-    <div className="bg-beach text-align-left">
+    <div className="bg-beach text-align-left homepage-container-padding">
       <div className="Essays1743 color-blue">Finally! A matchmaking site where community matters...</div>
       <br />
       <h2 className="color-blue">What is MatchesUp?</h2>

@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Step5() {
   return (
-    <div id="Step5" className="bg-blue text-align-left">
+    <div id="Step5" className="bg-blue text-align-left homepage-container-padding">
       <h1 id="Step5-title" className="color-red">STEP 5: The Beginning</h1>
       <div className="color-red">Your GSCF initiates contact if interested!</div>
       <br />

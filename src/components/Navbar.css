@@ -1,0 +1,37 @@
+#navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
+  background: linear-gradient(0deg, #1e365c, #1e365c), #1e365c;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  align-items: center;
+}
+
+#matches-up-link {
+  color: #e9482b;
+}
+
+.margin-0 {
+  margin: 0;
+}
+
+#matches-up-link:link {
+  text-decoration: none;
+}
+
+#nav-right {
+  font-size: 25px;
+  font-weight: 300;
+}
+
+#articles-link {
+  color: #e9482b;
+}
+
+#login-link {
+  color: #e9482b;
+  padding-left: 30px;
+}

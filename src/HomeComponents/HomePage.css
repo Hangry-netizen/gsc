@@ -1,5 +1,5 @@
-#Step1, #Step2, #Step3, #Step4, #Step5, #AFewWords, #Resources, #SingleCommunities, #Question {
-  padding: 50px 90px;
+.homepage-container-padding {
+  padding: 70px 90px;
 }
 
 #Step1-title, #Step2-title, #Step3-title, #Step4-title, #Step5-title {
@@ -11,7 +11,7 @@
   line-height: 35px;
 }
 #start-now-btn {
-  margin: 10px auto 5px 40px;
+  margin: 10px auto 5px 50px;
   width: 350px;
   height: 85px;
   font-size: 40px;
@@ -24,7 +24,7 @@
   background: transparent;
   border: none;
   position: relative;
-  margin-left: 467px;
+  margin-left: 475px;
 }
 
 #a-few-words-link:hover {

@@ -40,7 +40,7 @@ const ForgotPassword = () => {
         <button className="red-submit-btn" disabled={isLoading} type="submit">Submit</button>
       </form>
       <div id="login-link-div">
-        <Link id="login-link" to="/login">login</Link>
+        <Link id="forgot-password-login-link" to="/login">login</Link>
       </div>
     </div>
   )

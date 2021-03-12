@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Step1() {
   return (
-    <div id="Step1" className="bg-blue text-align-left">
+    <div id="Step1" className="bg-blue text-align-left homepage-container-padding">
       <h1 id="Step1-title" className="color-red">STEP 1: The Entry</h1>
       <div className="color-red">With your Good Single Christian Friend's permission, tell us about your GSCF!</div>
       <br />
