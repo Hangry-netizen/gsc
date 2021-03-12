@@ -13,7 +13,8 @@ import Question from "../HomeComponents/Question";
 import '../HomeComponents/HomePage.css'
 
 export default function HomePage() {
-  const { currentUser } = useAuth()
+/*
+    const { currentUser } = useAuth()
   const { logout } = useAuth()
 
   const [error, setError] = useState("None")
@@ -27,12 +28,15 @@ export default function HomePage() {
     }
     console.log(error)
   }
+*/
   return (
     <div id="homepage">
+      {/* 
       <div>
         {currentUser ? <button onClick={handleLogout}>Logout FF</button>
         : null }
       </div>
+      */}
       <Introduction />
       <Step1 />
       <Step2 />

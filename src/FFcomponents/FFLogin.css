@@ -51,6 +51,9 @@
   font-size: large;
   margin: 0;
 }
+.login-inputs:focus {
+  outline: #e9482b;
+}
 
 #forgot-password-link {
   font-size: 25px;

@@ -4,8 +4,8 @@
 }
 
 body {
-  font-family: Josefin Sans;
-  font-size: 30px;
+  font-family: Josefin Sans !important;
+  font-size: 30px !important;
 }
 
 .font-size-small {
@@ -38,12 +38,12 @@ body {
 
 .bg-blue {
   background-color: #1e365c;
-  padding: 1vw 3vw;
+  padding: 2vw 3vw;
 }
 
 .bg-beach {
   background-color: #fad4cd;
-  padding: 1vw 3vw;
+  padding: 2vw 3vw;
 }
 
 .bg-red {

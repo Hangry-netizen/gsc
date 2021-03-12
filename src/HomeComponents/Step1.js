@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from "react-router-dom";
 
 export default function Step1() {
   return (
@@ -6,14 +7,16 @@ export default function Step1() {
       <h1 id="Step1-title" className="color-red">STEP 1: The Entry</h1>
       <div className="color-red">With your Good Single Christian Friend's permission, tell us about your GSCF!</div>
       <br />
-      <span className="color-grey font-size-large">Create a Faithful Friend account</span>
-      <button id="start-now-btn" className="red-button">START NOW</button>
+      <span className="color-grey">Create a Faithful Friend account</span>
+      <Link to="/login">
+        <button id="start-now-btn" className="red-button">START NOW</button>
+      </Link>
       <div>
         {/*Supposed to be a link */}
-        <span id="a-few-words-link" className="font-size-small color-red">Read A FEW WORDS FROM US before proceeding</span>
+        <button id="a-few-words-link" className="font-size-small color-red">Read A FEW WORDS FROM US before proceeding</button>
       </div>
       <br />
-      <span className="color-grey font-size-large">Create a profile for you GSCF</span>
+      <span className="color-grey">Create a profile for you GSCF</span>
       <span className="color-grey"> (appear anonymous or link a social media account)</span>
 
     </div>
