@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import { useAuth } from "../contexts/AuthContext";
+import React from 'react';
 import Introduction from "../HomeComponents/Introduction";
 import Step1 from "../HomeComponents/Step1";
 import Step2 from "../HomeComponents/Step2";
@@ -13,30 +12,8 @@ import Question from "../HomeComponents/Question";
 import '../HomeComponents/HomePage.css'
 
 export default function HomePage() {
-/*
-    const { currentUser } = useAuth()
-  const { logout } = useAuth()
-
-  const [error, setError] = useState("None")
-
-  const handleLogout = () => {
-    try {
-      logout()
-      console.log("Successfully logout")
-    } catch {
-        setError("Failed to logout")
-    }
-    console.log(error)
-  }
-*/
   return (
     <div id="homepage">
-      {/* 
-      <div>
-        {currentUser ? <button onClick={handleLogout}>Logout FF</button>
-        : null }
-      </div>
-      */}
       <Introduction />
       <Step1 />
       <Step2 />
