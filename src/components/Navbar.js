@@ -31,7 +31,10 @@ export default function Navbar() {
         
         {currentUser 
         ?
-        <Link onClick={handleLogout}>LOGOUT</Link>
+        <>
+          <Link to="/my-good-single-christian-friends" id="my-gscfs">My GSCFs</Link>
+          <Link onClick={handleLogout} id="logout-link">LOGOUT</Link>
+        </>
         :
         <Link to="/login" id="login-link">LOGIN</Link>
         }

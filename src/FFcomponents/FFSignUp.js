@@ -5,7 +5,7 @@ import { useHistory } from "react-router-dom";
 
 import './FFSignUp.css'
 
-const FFSignUp = ({ role, setRole }) => {
+const FFSignUp = ({}) => {
   const history = useHistory()
   const { signup, verification } = useAuth()
 
@@ -17,7 +17,6 @@ const FFSignUp = ({ role, setRole }) => {
   const [isLoading, setIsLoading] = useState("")
   const [message, setMessage] = useState("")
   const [error, setError] = useState("")
-
 
   async function handleSignUp(e) {
     e.preventDefault()
@@ -39,7 +38,6 @@ const FFSignUp = ({ role, setRole }) => {
       setIsLoading(true)
       await signup(email, password, name, referral)
       await verification().then(function () {
-        setRole("FF")
         setMessage("Signed up successfully")
         history.push("/")
       })

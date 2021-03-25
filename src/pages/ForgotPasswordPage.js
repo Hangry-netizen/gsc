@@ -1,5 +1,5 @@
 import React from 'react';
-import ForgotPassword from '../FFcomponents/ForgotPassword'
+import ForgotPassword from '../FFComponents/ForgotPassword'
 
 export default function ForgotPasswordPage() {
   return (

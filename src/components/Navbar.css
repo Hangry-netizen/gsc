@@ -31,7 +31,7 @@
   color: #e9482b;
 }
 
-#login-link {
+#login-link, #logout-link, #my-gscfs {
   color: #e9482b;
   padding-left: 30px;
 }

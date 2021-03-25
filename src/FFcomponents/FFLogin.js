@@ -5,7 +5,7 @@ import { useHistory, Link } from 'react-router-dom';
 
 import "./FFLogin.css"
 
-const FFLogin = ({ role, setRole }) => {
+const FFLogin = () => {
   const history = useHistory()
 
   const { currentUser } = useAuth()
@@ -26,7 +26,6 @@ const FFLogin = ({ role, setRole }) => {
     try {
       setIsLoading(true)
       await login(email, password)
-      setRole("FF")
       history.push("/")
     } catch {
       setError("Failed to log in")
