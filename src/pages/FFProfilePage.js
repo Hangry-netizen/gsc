@@ -1,36 +1,22 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
-import { url } from "../App"
-import { useAuth } from "../contexts/AuthContext"
+import React from 'react';
+import { useAuth } from "../contexts/AuthContext";
+import CreateGSC from "../FFComponents/CreateGSC";
+import AwaitingApprovalGSCs from "../FFComponents/AwaitingApprovalGSCs";
+import ExistingGSCs from "../FFComponents/ExistingGSCs";
+import "../FFComponents/FFProfilePage.css"
 
 export default function FFProfilePage() {
   const { currentUser } = useAuth()
-  const [GSCs, setGSCs] = useState([])
-
-  useEffect(() => {
-    axios.get (`${url}/users/`)
-      .then((response) => {
-        setGSCs(response.data)
-        console.log(currentUser)
-      })
-      .catch((error) => {
-        console.log(error)
-      })
-  }, [])
 
   return (
-    <div> Profile Page {currentUser.displayName}
-    {
-      GSCs.map((GSC) => {
-        if (GSC.ff_email === currentUser.email) {
-          return (
-          <div>
-            <button>{GSC.name}</button>
-          </div>
-          )
-        }
-      })
-    }
-  </div>
+    <div id="FFProfilePage" className="bg-beach text-align-center"> 
+      <div id="welcome-ff" className="color-red Essays1743">
+        Welcome, {currentUser.displayName}!
+      </div>
+      <CreateGSC />
+      <div id="manage-profiles" className="color-blue">MANAGE GSCF PROFILES</div>
+      <AwaitingApprovalGSCs />
+      <ExistingGSCs />
+    </div>
   )
 }

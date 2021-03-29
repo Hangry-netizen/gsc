@@ -1,3 +1,5 @@
+/*navbar height = 7vh*/
+
 .login-page {
   display: flex;
   flex-direction: row;
@@ -45,7 +47,7 @@ body {
 }
 
 .bg-red {
-  color: #e9482b;
+  background-color: #e9482b;
 }
 
 .color-blue {
@@ -62,6 +64,10 @@ body {
 
 .color-grey {
   color: #cccccc;
+}
+
+.color-green {
+  color: #28a745;
 }
 
 .red-button {

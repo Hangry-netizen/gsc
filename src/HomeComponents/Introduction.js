@@ -1,23 +1,30 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Introduction() {
   return (
-    <div className="bg-beach text-align-left homepage-container-padding">
+    <div id="introduction" className="bg-beach text-align-left homepage-container-padding">
       <div className="Essays1743 color-blue">Finally! A matchmaking site where community matters...</div>
       <br />
-      <h2 className="color-blue">What is MatchesUp?</h2>
-      <p className="color-blue padding-left">
-        Lorem commodo sit cillum in aute voluptate culpa qui pariatur laboris do in ex ex. Aliqua ex pariatur sunt dolor elit sunt fugiat. Non quis eu in laborum dolor adipisicing amet mollit esse minim ea adipisicing duis. Mollit sit in pariatur culpa ut eu irure eiusmod quis fugiat. Cillum tempor nulla excepteur excepteur eiusmod amet occaecat proident labore anim est ex.Commodo aliquip do sunt dolore. Ad eiusmod in anim reprehenderit velit labore ad. Aute Lorem mollit exercitation sint laboris laborum velit proident exercitation. Pariatur laborum eiusmod ut et.
+      <h2 className="color-blue bold">What is MatchesUp?</h2>
+      <p className="color-red padding-left">
+      MatchesUp (/Match-us-up/) is a Christian matchmaking site, based in South East Asia, with a uniquely Asian approach. We believe in the value of community input, of friends helping friends find a suitable match. It can be intimidating and vulnerable to put your personal data on a generic public dating site, and even harder to sift through the masses to find a good quality partner. But what if your friends could help you not only create an anonymous profile (identified not by name or picture but simply by your bio data), and also recommend suitable matches for you, make recommendations and encourage you in your matchmaking journey? And what if this site had three high-priority filters:
       </p>
-      <p className="color-blue padding-left">
-        To cover our cost of running this service, we ask for a small donation of a minimum of RM5 for each GSCF profile created. See donation info. Thank you for helping us maintain this service for the body of Christ!
+      <p id="for-people" className="color-red padding-left">
+        <div className="padding-left">1) Good Single Christian’s (GSC’s) welcomed by friend referral only (peer to peer filter!)</div>
+        <br/>
+        <div className="padding-left">2) Only for those who acknowledge that their spiritual walk with Jesus is very important to them (not optional or just for show!)</div>
+        <br/>
+        <div className="padding-left">3) Designed for those who are serious about pursuing a genuine friendship in hopes that it might result in a lasting committed romantic relationship (this is not a casual hook-up site!)</div>
       </p>
-      <div className="color-red">
-        This site is for people who...
-      </div>
-      <div id="for-people" className="color-red padding-left">
-        - have a spiritual walk with Jesus that is very important to them. <br/>
-        - are serious about pursuing a genuine friendship in hopes of a lasting relationship.
+      <br />
+      <p className="color-red padding-left">We hope this inspires you to say, “Match us up!” </p>
+      <br />
+      <p className="color-blue padding-left">
+        To cover our cost of running this service, we ask for a small donation of a minimum of RM5/SGD3/PHP50 for each GSC profile created. <Link to="/donation-info" id="donation-info-link">See donation info.</Link> Thank you for helping us maintain this service for the body of Christ!
+      </p>
+      <div id="donation-waived-stamp" className=" text-align-center color-red">
+        waived for first trial batch
       </div>
     </div>
   )

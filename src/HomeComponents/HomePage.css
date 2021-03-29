@@ -2,7 +2,7 @@
   padding: 70px 90px;
 }
 
-#Step1-title, #Step2-title, #Step3-title, #Step4-title, #Step5-title {
+#step-1-title, #step-2-title, #step-3-title, #step-4-title, #step-5-title {
   margin-bottom: 5px;
 }
 
@@ -10,6 +10,26 @@
   margin-top: 10px;
   line-height: 35px;
 }
+
+#donation-info-link{
+  text-decoration: underline;
+  color: #1e365c;
+}
+
+#donation-info-link:hover {
+  color: #E9482B;
+}
+#donation-waived-stamp {
+  box-sizing: border-box;
+  width: 250px;
+  margin-top: 20px;
+  margin-left: 70vw;
+  transform: rotate(-10deg);
+  border: 3px #E9482B;
+  border-style: ridge;
+  background: transparent;
+}
+
 #start-now-btn {
   margin: 10px auto 5px 50px;
   width: 350px;
@@ -29,6 +49,7 @@
 
 #a-few-words-link:hover {
   text-decoration: underline;
+  color:#E9482B;
 }
 
 #resources-btn {
@@ -45,14 +66,20 @@
   line-height: 32px;
 }
 
+#single-communities-form {
+  display: inline-block;
+  text-align: center;
+}
+
 #single-communities-input {
-  width: 230px;
-  height: 34px;
+  width: 300px;
+  height: 40px;
   background: linear-gradient(0deg, #FFFBFB, #FFFBFB), #FFFBFB;
   border: 1px solid #FFFBFB;
   box-sizing: border-box;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-top: 15px;
+  font-size: 20px;
 }
 
 #single-communities-input:focus {
@@ -67,6 +94,13 @@
   box-sizing: border-box;
   margin-top: 15px;
   letter-spacing: 2px;
+}
+
+#alert-div {
+  background-color:transparent;
+  box-sizing: border-box;
+  width: 300px;
+  font-size: 20px;
 }
 
 #send-us-an-email-btn {
