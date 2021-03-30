@@ -35,7 +35,7 @@ const FFLogin = () => {
   return (
     <div id="login-container">
       <div id="login-title">LOGIN</div>
-      {error && <Alert variant="danger">{error}</Alert>}
+      {error && <Alert variant="danger" className="font-size-small">{error}</Alert>}
       <form id="login-form" onSubmit={handleLogin}>
         <div className="login-input-fields">
           <label className="labels">email</label>

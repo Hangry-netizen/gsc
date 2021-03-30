@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from "../contexts/AuthContext"
+import { UncontrolledAlert } from "react"
 import './Navbar.css'
 
 export default function Navbar() {
@@ -11,6 +12,7 @@ export default function Navbar() {
   const [error, setError] = useState("")
 
   const handleLogout = () => {
+    setMessage("")
     try {
       logout()
       setMessage("Successfully logout")

@@ -57,7 +57,7 @@ const FFSignUp = ({}) => {
         </div>
       </span>
       {message && <Alert variant="success">{message}</Alert>}
-      {error && <Alert variant="danger">{error}</Alert>}
+      {error && <Alert variant="danger" className="font-size-small">{error}</Alert>}
       <form onSubmit={handleSignUp}>
         <div className="sign-up-input-fields">
           <label className="labels">email</label>

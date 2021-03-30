@@ -59,12 +59,12 @@ export default function CreateGSC() {
         CREATE A NEW <span className="light italic">GOOD SINGLE CHRISTIAN FRIEND</span> PROFILE
       </button>
       <Modal show={show} onHide={handleClose}>
-        <Modal.Header closeButton>
+        <Modal.Header className="bg-beach">
           <Modal.Title>
-            <span className="color-blue font-size-large">Create A New GSCF Profile</span>
+            <span className="color-red font-size-large">Create A New GSCF Profile</span>
           </Modal.Title>
         </Modal.Header>
-        <Modal.Body>
+        <Modal.Body className="bg-beach">
           <Form onSubmit={e => handleSubmit(e)}>
             <div className="font-size-medium">
               <label className="color-blue">Enter GSCF's Name: </label>
@@ -76,7 +76,7 @@ export default function CreateGSC() {
             </div>
             <div className="text-align-right">
               <Button variant="secondary" id="create-gsc-close-btn" onClick={handleClose}>Close</Button>
-              <Button variant="primary" disabled={isLoading}>Confirm</Button>
+              <Button id="create-gsc-modal-confirm-btn" disabled={isLoading}>Confirm</Button>
             </div>
           </Form>
         </Modal.Body>

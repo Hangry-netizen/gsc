@@ -8,10 +8,15 @@
 body {
   font-family: Josefin Sans !important;
   font-size: 30px !important;
+  background-color: #fad4cd !important;
 }
 
 .font-size-small {
   font-size: 16px;
+}
+
+.font-size-small-mid {
+  font-size: 20px;
 }
 
 .font-size-medium {
@@ -19,7 +24,7 @@ body {
 }
 
 .font-size-large {
-  font-size: 32px;
+  font-size: 32px !important;
 }
 
 .light {
@@ -86,7 +91,7 @@ body {
 }
 
 .text-align-center {
-  text-align: center;
+  text-align: center !important;
 }
 
 .text-align-right {
