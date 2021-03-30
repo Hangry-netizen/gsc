@@ -8,7 +8,6 @@ import "./FFLogin.css"
 const FFLogin = () => {
   const history = useHistory()
 
-  const { currentUser } = useAuth()
   const { login } = useAuth()
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
@@ -31,7 +30,6 @@ const FFLogin = () => {
       setError("Failed to log in")
     }
     setIsLoading(false)
-    console.log(currentUser)
   }
 
   return (

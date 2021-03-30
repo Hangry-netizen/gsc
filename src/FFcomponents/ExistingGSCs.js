@@ -8,9 +8,8 @@ export default function ExistingGSCs() {
   const [ExistingGSCs, setExistingGSCs] = useState([])
 
   useEffect(() => {
-    axios.get (`${url}/users/`)
+    axios.get (`${url}/gscs/`)
       .then((response) => {
-        console.log(response.data)
         setExistingGSCs(response.data)
       })
       .catch((error) => {
@@ -25,7 +24,7 @@ export default function ExistingGSCs() {
           if (ExistingGSC.ff_email === currentUser.email) {
             return (
             <div>
-              <button className="gsc-profile-button color-red Essays1743">{ExistingGSC.name}</button>
+              <button id="existing-gsc-btn" className="gsc-profile-button color-red Essays1743" key="{ExistingGSC}">{ExistingGSC.name}</button>
             </div>
             )
           }

@@ -6,15 +6,15 @@ import { url } from "../App";
 export default function AwaitingApprovalGSCs() {
   const { currentUser } = useAuth()
   const [AwaitingGSCs, setAwaitingGSCs] = useState([])
+  const [error, setError] = useState("")
 
   useEffect(() => {
     axios.get (`${url}/approvals/`)
       .then((response) => {
-        console.log(response.data)
         setAwaitingGSCs(response.data)
       })
       .catch((error) => {
-        console.log(error)
+        setError(error)
       })
   }, [])
 
@@ -25,8 +25,8 @@ export default function AwaitingApprovalGSCs() {
         if (AwaitingGSC.ff_email === currentUser.email) {
           return (
           <div>
-            <button className="gsc-profile-button color-red Essays1743">{AwaitingGSC.gsc_name}</button>
-            <div className="color-red font-size-small">Awaiting consent and screening</div>
+            <button className="gsc-profile-button color-red Essays1743" key="{AwaitingGSC}">{AwaitingGSC.gsc_name}</button>
+            <div ud="c" className="color-red font-size-small">Awaiting consent and screening</div>
 
           </div>
           )

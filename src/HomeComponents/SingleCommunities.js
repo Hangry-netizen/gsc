@@ -1,6 +1,5 @@
 import axios from 'axios';
 import React, { useState } from 'react';
-import { Alert } from 'react-bootstrap';
 import { url } from "../App";
 
 export default function SingleCommunities() {

@@ -13,11 +13,10 @@ export default function Navbar() {
   const handleLogout = () => {
     try {
       logout()
-      console.log("Successfully logout")
+      setMessage("Successfully logout")
     } catch {
         setError("Failed to logout")
     }
-    console.log(error)
   }
   return (
     <div id="navbar" className="color-red bg-blue">
@@ -27,6 +26,7 @@ export default function Navbar() {
         </Link>
       </div>
       <div id="nav-right">
+        <Link to="/" id="home-link">HOME</Link>
         <Link to="/articles" id="articles-link">ARTICLES</Link>
         
         {currentUser 

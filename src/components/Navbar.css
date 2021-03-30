@@ -30,11 +30,11 @@
   font-weight: 300;
 }
 
-#articles-link {
+#articles-link, #home-link {
   color: #e9482b;
 }
 
-#login-link, #logout-link, #my-gscfs {
+#login-link, #logout-link, #my-gscfs, #articles-link {
   color: #e9482b;
   padding-left: 30px;
 }

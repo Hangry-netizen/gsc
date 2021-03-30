@@ -14,7 +14,7 @@ export default function FFProfilePage() {
         Welcome, {currentUser.displayName}!
       </div>
       <CreateGSC />
-      <div id="manage-profiles" className="color-blue">MANAGE GSCF PROFILES</div>
+      <div id="manage-profiles" className="color-blue bold">MANAGE GSCF PROFILES</div>
       <AwaitingApprovalGSCs />
       <ExistingGSCs />
     </div>
