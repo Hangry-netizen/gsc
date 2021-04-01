@@ -6,12 +6,15 @@
 #welcome-ff {
   box-sizing: content-box;
   padding: 7vh;
-  font-size: larger;
+  font-size: 70px;
 }
 
 #create-gsc-btn {
   box-sizing: border-box;
-  padding: 5px 20px;
+  height: 80px;
+  line-height: 65px;
+  width: auto;
+  padding: 10px 40px;
   text-align: center;
   border: 1px solid #E9482B;
   box-sizing: border-box;

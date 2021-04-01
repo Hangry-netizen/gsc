@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function AFewWords() {
   return (
-    <div id="a-few-words-from-us" className="bg-blue homepage-container-padding">
-      <h2 className="text-align-right color-red bold">A FEW WORDS FROM US</h2>
+    <div id="a-few-words-from-us" className="bg-blue homepage-container-padding text-align-justify">
+      <h1 id="a-few-words-title" className="text-align-right color-red bold">A FEW WORDS FROM US</h1>
       <br />
       <p className="color-beach light">First, a disclaimer on singleness: We affirm that marriage is not for all and is not the most important part of our life (our relationship with God is!) Singleness is not a disease or problem to be cured or solved. That said, we also believe marriage is part of God’s design for humanity and can be one of the greatest delights and sanctifiers that God uses to refine us into His image. Marriage provides the gift of procreation as well as the gift of companionship, which are both expressions of God’s grace for us. Whether single or married, we all live to serve Him.</p>
       {/*supposed to be a link */}
@@ -13,7 +13,7 @@ export default function AFewWords() {
       <p id="links-in-a-few-words" className="Essays1743 color-red padding-left">In short: Everybody’s different. A world where everyone’s the same is boring, so learn to adapt. Marriage is hard work. Start investing now and enjoy the journey.</p>
       <p className="color-beach light">Lastly, a word on how to do this well: We value healthy friendships and believe that God intends for us to journey harmoniously with our community along this pilgrimage. So, explore this platform with a simple desire to make friends and keep friends, no matter what. Not all good people are suitable life partners, and not all matches will work out - that’s ok! Maybe you’ll get a new friend out of it. Also, not every person your friends recommend is going to be right for you - that’s ok too! Don’t play the blame game - honor each person you encounter on this platform by remembering that they are, like you, God’s precious children, and treat them accordingly.  Simple tips: Communicate clearly to your potential match where you stand - if you become clear that it’s friendship and not romance for you, tell it as it is, out of an honest respect for their heart. Don’t end it badly and burn your bridges - we remain brothers and sisters in Christ. For those who are recommending matches, please refrain from premature teasing, as this can add undue pressure. Also, respect your GSC friend’s heart and privacy by not broadcasting their involvement on the site, appreciating that they have allowed you a voice in this personal area of their life.</p>
       {/*supposed to be a link */}
-      <p id="links-in-a-few-words" className="Essays1743 color-red padding-left">In short: Don’t stress - relax, enjoy getting acquainted with new friends on this journey of life regardless of how it turns out. Don’t “ghost”, don’t “breadcrumb”, don’t “flake”:, don’t say things you don’t mean, just to be nice. And appreciate your friends who urged you to sign up - they’re on your side! Respect privacy, be honest, and honor each other as you would before the Lord.</p>
+      <p id="links-in-a-few-words" className="Essays1743 color-red padding-left">In short: Don’t stress - relax, enjoy getting acquainted with new friends on this journey of life regardless of how it turns out. Don’t “ghost”, don’t “breadcrumb”, don’t “flake”; don’t say things you don’t mean, just to be nice. And appreciate your friends who urged you to sign up - they’re on your side! Respect privacy, be honest, and honor each other as you would before the Lord.</p>
     </div>
   )
 }

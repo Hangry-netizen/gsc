@@ -2,8 +2,15 @@
   padding: 70px 90px;
 }
 
-#step-1-title, #step-2-title, #step-3-title, #step-4-title, #step-5-title {
+#what-is-matches-up-title {
+  margin-bottom: 50px;
+  font-size: 60px;
+}
+
+#step-1-title, #step-2-title, #step-3-title, #step-4-title, #step-5-title, #a-few-words-title {
   margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 60px;
 }
 
 #for-people {
@@ -21,17 +28,29 @@
 }
 #donation-waived-stamp {
   box-sizing: border-box;
-  width: 250px;
-  margin-top: 20px;
-  margin-left: 70vw;
-  transform: rotate(-10deg);
-  border: 3px #E9482B;
-  border-style: ridge;
-  background: transparent;
+  width: 380px;
+  margin-top: -5vh;
+  margin-left: 60vw;
+  transform: rotate(-8deg);
+  border: 8px #E9482B;
+  border-style: double;
+  box-shadow: 0 0 0 1px #E9482B, 0 0 0 1px #E9482B inset;
+  opacity: 0.6;
+  letter-spacing: 4px;
+  z-index: 4;
+}
+
+#create-acc-and-start-now-div {
+  display: flex;
+}
+
+#start-now-and-few-words-div {
+  margin-top: -20px;
+  margin-left: 20px;
+  text-align: center;
 }
 
 #start-now-btn {
-  margin: 10px auto 5px 50px;
   width: 350px;
   height: 85px;
   font-size: 40px;
@@ -40,16 +59,15 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-#a-few-words-link {
-  background: transparent;
-  border: none;
-  position: relative;
-  margin-left: 475px;
-}
-
 #a-few-words-link:hover {
   text-decoration: underline;
   color:#E9482B;
+}
+
+#resources {
+  box-sizing: border-box;
+  width: 900px;
+  margin: auto;
 }
 
 #resources-btn {
@@ -63,22 +81,22 @@
 }
 
 #links-in-a-few-words {
-  line-height: 32px;
+  line-height: 50px;
 }
 
 #single-communities-form {
-  display: inline-block;
-  text-align: center;
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
 }
 
 #single-communities-input {
   width: 300px;
-  height: 40px;
+  height: 55px;
   background: linear-gradient(0deg, #FFFBFB, #FFFBFB), #FFFBFB;
   border: 1px solid #FFFBFB;
   box-sizing: border-box;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  margin-top: 15px;
   font-size: 20px;
 }
 
@@ -87,13 +105,22 @@
 }
 
 #single-communities-form-submit-btn {
-  width: 110px;
-  height: 34px;
-  background: linear-gradient(0deg, #fad4cd, #fad4cd), #fad4cd;
+  width: 200px;
+  height: 55px;
+  background-color: rgb(30, 54, 92);
   border: none;
+  border-radius: 25px;
   box-sizing: border-box;
-  margin-top: 15px;
   letter-spacing: 2px;
+  line-height: 55px;
+  margin-left: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+#single-communities-form-submit-btn:hover {
+  background-color: #E9482B;
+  color: #1e365c;
 }
 
 #alert-div {
@@ -112,4 +139,8 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-size: 24px;
   margin: 30px auto;
+}
+
+#send-us-an-email-btn:focus {
+  background-color: #E9482B;
 }

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from "../contexts/AuthContext"
-import { UncontrolledAlert } from "react"
+import MatchesUpLogo from "../utils/MatchesUpLogo.svg"
 import './Navbar.css'
 
 export default function Navbar() {
@@ -24,7 +24,8 @@ export default function Navbar() {
     <div id="navbar" className="color-red bg-blue">
       <div id="nav-left">
         <Link to="/" id="matches-up-link">
-          <h2 className="margin-0">MatchesUp</h2>
+          <img src={MatchesUpLogo} alt="MatchesUpLogo" id="matches-up-logo"/>
+          <span id="matches-up-title">MatchesUp</span>
         </Link>
       </div>
       <div id="nav-right">

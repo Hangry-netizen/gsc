@@ -10,7 +10,7 @@ import DonationPage from './pages/DonationPage';
 import FFProfilePage from './pages/FFProfilePage';
 import { useAuth } from "./contexts/AuthContext"
 
-export const url = 'http://127.0.0.1:5000/api/v1';
+export const url = 'https://matches-up.herokuapp.com/api/v1';
 
 function App() {
   const { currentUser } = useAuth()
