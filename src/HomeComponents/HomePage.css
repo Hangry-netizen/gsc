@@ -2,9 +2,32 @@
   padding: 70px 90px;
 }
 
+#intro-flex {
+  display: flex;
+  padding-top: -25px;
+  margin-bottom: 55px;
+  justify-content: space-between;
+  position: relative;
+}
+
+#intro-right {
+  position:absolute;
+  bottom: 0;
+  right: 0;
+}
+
+#matches-up-logo-intro {
+  width: 350px;
+  height: auto;
+}
+
 #what-is-matches-up-title {
-  margin-bottom: 50px;
-  font-size: 60px;
+  font-size: 85px;
+  line-height: 85px;
+}
+
+#finally {
+  font-size: 32px;
 }
 
 #step-1-title, #step-2-title, #step-3-title, #step-4-title, #step-5-title, #a-few-words-title {
@@ -29,15 +52,14 @@
 #donation-waived-stamp {
   box-sizing: border-box;
   width: 380px;
-  margin-top: -5vh;
-  margin-left: 60vw;
+  margin-top: -18vh;
+  margin-left: 50vw;
   transform: rotate(-8deg);
   border: 8px #E9482B;
   border-style: double;
   box-shadow: 0 0 0 1px #E9482B, 0 0 0 1px #E9482B inset;
-  opacity: 0.6;
   letter-spacing: 4px;
-  z-index: 4;
+  background: rgba(255, 255, 255, 0.5);
 }
 
 #create-acc-and-start-now-div {

@@ -10,8 +10,8 @@ export default function DonationPage() {
     <span id="donation-page-container" className="bg-beach">
       <div id="donation-info" className="color-red">DONATION INFO</div>
       <p id="donation-p" className="color-blue">
-        To cover our cost of running this service, we ask for a small donation for each GSC profile created.
-        <br />Click for transfer details for your country. <span className="color-red">*payment info will be updated later</span>
+        To cover our cost of running this service, we ask for a small donation for each GSC profile created. Click for transfer details for your country.
+        <span className="color-red font-size-medium"> *payment info will be updated later</span>
       </p>
       <p id="donation-p" className="color-blue">
         If we do have surplus, donations will be channeled to fund similar ventures.

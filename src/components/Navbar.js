@@ -24,14 +24,12 @@ export default function Navbar() {
     <div id="navbar" className="color-red bg-blue">
       <div id="nav-left">
         <Link to="/" id="matches-up-link">
-          <img src={MatchesUpLogo} alt="MatchesUpLogo" id="matches-up-logo"/>
+          <img src={MatchesUpLogo} alt="MatchesUpLogo" id="matches-up-logo-nav"/>
           <span id="matches-up-title">MatchesUp</span>
         </Link>
       </div>
       <div id="nav-right">
-        <Link to="/" id="home-link">HOME</Link>
-        <Link to="/articles" id="articles-link">ARTICLES</Link>
-        
+        <Link to="/" id="home-link">HOME</Link>        
         {currentUser 
         ?
         <>

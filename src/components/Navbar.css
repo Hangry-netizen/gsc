@@ -17,7 +17,7 @@
   color: #e9482b;
 }
 
-#matches-up-logo {
+#matches-up-logo-nav {
   height: 60px;
   width: auto;
 }
@@ -33,7 +33,7 @@
 
 #nav-right {
   font-size: 25px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 #articles-link, #home-link {
