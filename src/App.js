@@ -1,7 +1,7 @@
 import React from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import './App.css';
-import Navbar from './components/Navbar';
+import Navbar from './NavComponents/Navbar';
 import HomePage from './pages/HomePage';
 import FFLoginPage from './pages/FFLoginPage';
 import ForgotPasswordPage from "./pages/ForgotPasswordPage";

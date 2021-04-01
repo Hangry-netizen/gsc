@@ -44,3 +44,9 @@
   color: #e9482b;
   padding-left: 30px;
 }
+
+@media(max-width: 720px) {
+  #nav-right, #matches-up-title {
+    display: none;
+  }
+}

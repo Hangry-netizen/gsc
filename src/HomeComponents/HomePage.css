@@ -1,10 +1,10 @@
 .homepage-container-padding {
-  padding: 70px 90px;
+  padding: 5%;
 }
 
 #intro-flex {
   display: flex;
-  padding-top: -25px;
+  padding-top: none;
   margin-bottom: 55px;
   justify-content: space-between;
   position: relative;
@@ -51,9 +51,10 @@
 }
 #donation-waived-stamp {
   box-sizing: border-box;
+  position: relative;
   width: 380px;
-  margin-top: -18vh;
-  margin-left: 50vw;
+  margin-top: -10%;
+  margin-left: 55%;
   transform: rotate(-8deg);
   border: 8px #E9482B;
   border-style: double;
@@ -64,11 +65,17 @@
 
 #create-acc-and-start-now-div {
   display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+#create-ff-txt {
+  margin: auto 0;;
 }
 
 #start-now-and-few-words-div {
-  margin-top: -20px;
-  margin-left: 20px;
+  margin-left: 2%;
+  padding-top: 4%;
   text-align: center;
 }
 
@@ -88,7 +95,6 @@
 
 #resources {
   box-sizing: border-box;
-  width: 900px;
   margin: auto;
 }
 
@@ -165,4 +171,176 @@
 
 #send-us-an-email-btn:focus {
   background-color: #E9482B;
+}
+
+/* 768px */
+@media (max-width: 1024px) {
+  #intro-flex {
+    flex-direction: column;
+  }
+
+  #intro-left {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+  }
+
+  #matches-up-logo-intro {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+
+  #intro-right {
+    margin: 0;
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    padding-top: 5%;
+  }
+  
+  #what-is-matches-up-title {
+    display: block;
+    display: block;
+    width: 100%;
+    font-size: 60px;
+    line-height: 85px;
+  }
+  
+  #finally {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  #donation-waived-stamp {
+    box-sizing: border-box;
+    position: relative;
+    width: 350px;
+    margin-top: -4%;
+    margin-left: 40%;
+    transform: rotate(-6deg);
+    border: 8px #E9482B;
+    border-style: double;
+    box-shadow: 0 0 0 1px #E9482B, 0 0 0 1px #E9482B inset;
+    letter-spacing: 4px;
+    background: rgba(255, 255, 255, 0.5);
+  }
+
+  #start-now-and-few-words-div {
+    padding-top: 4%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  #a-few-words-title {
+    font-size: 50px;
+  }
+
+  #single-communities {
+    text-align: left;
+  }
+}
+
+
+/* 720px */
+@media (max-width: 720px) {
+  #intro-flex {
+    margin-bottom: 2%;
+  }
+
+  #matches-up-logo-intro {
+    width: 50%;
+  }
+
+  
+  #what-is-matches-up-title {
+    font-size: 26px;
+    line-height: 30px;
+  }
+  
+  #finally {
+    font-size: 16px;
+  }
+
+  #donation-waived-stamp {
+    width: 180px;
+    margin-top: -13%;
+    margin-left: 20%;
+    border: 4px #E9482B;
+    letter-spacing: 2px;
+  }
+
+  #step-1-title, #step-2-title, #step-3-title, #step-4-title, #step-5-title, #a-few-words-title {
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-size: 25px;
+  }
+
+  #create-acc-and-start-now-div {
+    display: block;
+  }
+  
+  #create-ff-txt, #create-gsc-txt {
+    text-align: center;
+  }
+
+  #start-now-btn {
+    width: 120px;
+    height: 50px;
+    font-size: 30px;
+    border: 1px solid #E9482B;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  #a-few-words-link {
+    font-size: 12px;
+    text-decoration: underline;
+  }
+
+  #resources-btn {
+    width: 180px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 40px;
+  }
+
+  #currently-unavailable {
+    font-size: 12px;
+  }
+
+  #a-few-words-title {
+    font-size: 20px;
+  }
+
+  #justify-text {
+    text-align: justify;
+  }
+  
+  #single-communities-input {
+    width: 200px;
+    height: 40px;
+  }
+  
+  #single-communities-form-submit-btn {
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 5px;
+  }
+
+  #have-a-question {
+    font-size: 26px;
+    margin: 0;
+  }
+
+  #send-us-an-email-btn {
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+  }
 }

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useAuth } from "../contexts/AuthContext"
 import MatchesUpLogo from "../utils/MatchesUpLogo.svg"
 import './Navbar.css'
+import Burger from "./Burger"
 
 export default function Navbar() {
   const { currentUser } = useAuth()
@@ -40,6 +41,7 @@ export default function Navbar() {
         <Link to="/login" id="login-link">LOGIN</Link>
         }
       </div>
+      <Burger />
     </div>
   )
 }

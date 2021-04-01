@@ -49,3 +49,59 @@
 #existing-gsc-btn, #existing-gsc-btn {
   margin-bottom: 4vh;
 }
+
+@media(min-width: 721px) {
+  #create-gscf-btn {
+    display: none;
+  }
+}
+
+@media(max-width: 1024px) {
+  #create-gsc-btn {
+    width: 700px;
+    height: 150px;
+  }
+
+  #create-gscf-btn {
+    display: none;
+  }
+
+  #use-this-name {
+    width: 380px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media(max-width: 720px) {
+  #welcome-ff {
+    box-sizing: content-box;
+    padding: 7vh;
+    font-size: 50px;
+  }
+
+  #create-gsc-btn {
+    display: none;
+  }
+
+  #create-gscf-btn {
+    display: block;
+    width: 250px;
+    height: 70px;
+    margin: auto;
+  }
+
+  .gsc-profile-button {
+    box-sizing: border-box;
+    width: 180px;
+    height: 50px;
+  }
+
+  #awaiting-txt {
+    font-size: 12px;
+  }
+
+  #use-this-name {
+    margin-bottom: 10px;
+  }
+}

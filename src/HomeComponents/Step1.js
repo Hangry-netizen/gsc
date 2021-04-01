@@ -11,7 +11,7 @@ export default function Step1() {
       <div className="color-red">With your Good Single Christian Friend's permission, tell us about your GSCF!</div>
       <br />
       <div id="create-acc-and-start-now-div">
-        <div className="color-grey">Create a Faithful Friend account</div>
+        <div id="create-ff-txt" className="color-grey">Create a Faithful Friend account</div>
         <div id="start-now-and-few-words-div">
           {currentUser 
             ?
@@ -29,7 +29,7 @@ export default function Step1() {
         </div>
       </div>
       <br />
-      <div className="color-grey">Create a profile for you GSCF (appear anonymous or link a social media account)</div>
+      <div id="create-gsc-txt" className="color-grey">Create a profile for you GSCF<br />(appear anonymous or link a social media account)</div>
 
     </div>
   )

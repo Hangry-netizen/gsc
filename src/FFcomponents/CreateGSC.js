@@ -55,9 +55,16 @@ export default function CreateGSC() {
 
   return (
     <div>
-      <button id="create-gsc-btn" className="red-button" onClick={handleShow}>
-        CREATE A NEW <span className="light italic">GOOD SINGLE CHRISTIAN FRIEND</span> PROFILE
-      </button>
+      <div>
+        <button id="create-gsc-btn" className="red-button" onClick={handleShow}>
+          CREATE A NEW <span className="gscf light italic">GOOD SINGLE CHRISTIAN FRIEND</span> PROFILE
+        </button>
+      </div>
+      <div>
+        <button id="create-gscf-btn" className="red-button" onClick={handleShow}>
+          Create A New GSCF Profile
+        </button>
+      </div>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header className="bg-beach">
           <Modal.Title>
@@ -69,7 +76,7 @@ export default function CreateGSC() {
             <div>
               <label className="color-blue font-size-medium">Enter GSCF's Name: </label>
               <input className="font-size-medium" type="name" onChange={e => setName(e.target.value)} />
-              <div className="color-blue font-size-small-mid">Please use this name when you fill out the form for your GSCF</div>
+              <div id="use-this-name" className="color-blue font-size-small-mid">Please use this name when you fill out the form for your GSCF</div>
             </div>
             <div>
               {error && <Alert className="color-red font-size-small">{error}</Alert>}

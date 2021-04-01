@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function AFewWords() {
   return (
-    <div id="a-few-words-from-us" className="bg-blue homepage-container-padding text-align-justify">
+    <div id="a-few-words-from-us" className="bg-blue homepage-container-padding justify-text">
       <h1 id="a-few-words-title" className="text-align-right color-red bold">A FEW WORDS FROM US</h1>
       <br />
       <p className="color-beach light">First, a disclaimer on singleness: We affirm that marriage is not for all and is not the most important part of our life (our relationship with God is!) Singleness is not a disease or problem to be cured or solved. That said, we also believe marriage is part of God’s design for humanity and can be one of the greatest delights and sanctifiers that God uses to refine us into His image. Marriage provides the gift of procreation as well as the gift of companionship, which are both expressions of God’s grace for us. Whether single or married, we all live to serve Him.</p>

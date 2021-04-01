@@ -8,7 +8,7 @@ import "../DonationComponents/DonationPage.css";
 export default function DonationPage() {
   return (
     <span id="donation-page-container" className="bg-beach">
-      <div id="donation-info" className="color-red">DONATION INFO</div>
+      <div id="donation-info" className="color-red padding-left">DONATION INFO</div>
       <p id="donation-p" className="color-blue">
         To cover our cost of running this service, we ask for a small donation for each GSC profile created. Click for transfer details for your country.
         <span className="color-red font-size-medium"> *payment info will be updated later</span>
