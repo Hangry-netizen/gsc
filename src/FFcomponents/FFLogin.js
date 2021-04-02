@@ -12,6 +12,7 @@ const FFLogin = () => {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const [isLoading, setIsLoading] = useState(false)
+  const [message, setMessage] = useState("")
   const [error, setError] = useState("")
 
   async function handleLogin(e) {
@@ -25,6 +26,7 @@ const FFLogin = () => {
     try {
       setIsLoading(true)
       await login(email, password)
+      setMessage("Logged in successfully")
       history.push("/")
     } catch {
       setError("Failed to log in")
@@ -33,23 +35,29 @@ const FFLogin = () => {
   }
 
   return (
-    <div id="login-container">
+    <div id="login-container" className="text-align-center bg-blue color-red">
       <div id="login-title">LOGIN</div>
+      <div>
+      {message && <Alert variant="success" className="font-size-small">{message}</Alert>}
       {error && <Alert variant="danger" className="font-size-small">{error}</Alert>}
+      </div>
       <form id="login-form" onSubmit={handleLogin}>
         <div className="login-input-fields">
           <label className="labels">email</label>
-          <input className="login-inputs" type="email" onChange={e => setEmail(e.target.value)} />
+          <input className="login-input" type="email" onChange={e => setEmail(e.target.value)} />
         </div>
         <div className="login-input-fields">
           <label className="labels">password</label>
-          <input className="login-inputs" type="password" onChange={e => setPassword(e.target.value)} />
+          <input className="login-input" type="password" onChange={e => setPassword(e.target.value)} />
         </div>
-        <button className="hidden-submit-btn" disabled={isLoading} type="submit"></button>
+        <div id="forgot-password-link-div">
+          <Link id="forgot-password-link" to="/forgot-password">forgot password?</Link>
+        </div>
+        <div>
+          <button id="login-enter-btn" className="red-button" disabled={isLoading} type="submit">Enter</button>
+        </div>
       </form>
-      <div id="forgot-password-link-div">
-        <Link id="forgot-password-link" to="/forgot-password">forgot password?</Link>
-      </div>
+      
     </div>
   )
 }

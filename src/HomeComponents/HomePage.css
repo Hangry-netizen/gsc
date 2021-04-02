@@ -1,5 +1,6 @@
-.homepage-container-padding {
-  padding: 5%;
+.homepage-container-padding-font {
+  padding: 5vh 7vw;
+  font-size: 22px;
 }
 
 #intro-flex {
@@ -17,28 +18,33 @@
 }
 
 #matches-up-logo-intro {
-  width: 350px;
+  width: 300px;
   height: auto;
 }
 
 #what-is-matches-up-title {
-  font-size: 85px;
-  line-height: 85px;
+  font-size: 70px;
+  line-height: 70px;
 }
 
 #finally {
-  font-size: 32px;
+  font-size: 30px;
 }
 
 #step-1-title, #step-2-title, #step-3-title, #step-4-title, #step-5-title, #a-few-words-title {
   margin-bottom: 5px;
   font-weight: 700;
-  font-size: 60px;
+  font-size: 40px;
 }
 
 #for-people {
   margin-top: 10px;
   line-height: 35px;
+}
+
+#to-cover-cost {
+  box-sizing: content-box;
+  padding-bottom: 5%
 }
 
 #donation-info-link{
@@ -49,10 +55,11 @@
 #donation-info-link:hover {
   color: #E9482B;
 }
+
 #donation-waived-stamp {
   box-sizing: border-box;
   position: relative;
-  width: 380px;
+  width: 250px;
   margin-top: -10%;
   margin-left: 55%;
   transform: rotate(-8deg);
@@ -80,9 +87,9 @@
 }
 
 #start-now-btn {
-  width: 350px;
-  height: 85px;
-  font-size: 40px;
+  width: 220px;
+  height: 50px;
+  font-size: 22px;
   border: 1px solid #E9482B;
   box-sizing: border-box;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -100,9 +107,9 @@
 
 #resources-btn {
   margin-top: 20px;
-  width: 280px;
-  height: 70px;
-  font-size: 30px;
+  width: 220px;
+  height: 50px;
+  font-size: 22px;
   border: 1px solid #E9482B;
   box-sizing: border-box;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -133,14 +140,14 @@
 }
 
 #single-communities-form-submit-btn {
-  width: 200px;
-  height: 55px;
+  width: 150px;
+  height: 50px;
   background-color: rgb(30, 54, 92);
   border: none;
   border-radius: 25px;
   box-sizing: border-box;
   letter-spacing: 2px;
-  line-height: 55px;
+  line-height: 50px;
   margin-left: 20px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-align: center;
@@ -151,21 +158,14 @@
   color: #1e365c;
 }
 
-#alert-div {
-  background-color:transparent;
-  box-sizing: border-box;
-  width: 300px;
-  font-size: 20px;
-}
-
 #send-us-an-email-btn {
-  width: 320px;
-  height: 63px;
+  width: 250px;
+  height: 60px;
   background: linear-gradient(0deg, #FFFBFB, #FFFBFB), #FFFBFB;
   border: 1px solid #FFFBFB;
   box-sizing: border-box;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  font-size: 24px;
+  font-size: 20px;
   margin: 30px auto;
 }
 
@@ -173,7 +173,7 @@
   background-color: #E9482B;
 }
 
-/* 768px */
+/* 1024px */
 @media (max-width: 1024px) {
   #intro-flex {
     flex-direction: column;
@@ -187,7 +187,7 @@
   }
 
   #matches-up-logo-intro {
-    width: 300px;
+    width: 250px;
     height: auto;
     display: block;
     margin: auto;
@@ -207,19 +207,19 @@
     display: block;
     display: block;
     width: 100%;
-    font-size: 60px;
-    line-height: 85px;
+    font-size: 40px;
+    line-height: 40px;
   }
   
   #finally {
-    font-size: 26px;
+    font-size: 25px;
     text-align: center;
   }
 
   #donation-waived-stamp {
     box-sizing: border-box;
     position: relative;
-    width: 350px;
+    width: 250px;
     margin-top: -4%;
     margin-left: 40%;
     transform: rotate(-6deg);
@@ -236,10 +236,6 @@
     margin: 0 auto;
   }
 
-  #a-few-words-title {
-    font-size: 50px;
-  }
-
   #single-communities {
     text-align: left;
   }
@@ -248,6 +244,10 @@
 
 /* 720px */
 @media (max-width: 720px) {
+  .homepage-container-padding-font {
+    font-size: 16px;
+  }
+
   #intro-flex {
     margin-bottom: 2%;
   }
@@ -258,8 +258,8 @@
 
   
   #what-is-matches-up-title {
-    font-size: 26px;
-    line-height: 30px;
+    font-size: 25px;
+    line-height: 25px;
   }
   
   #finally {
@@ -267,7 +267,7 @@
   }
 
   #donation-waived-stamp {
-    width: 180px;
+    width: 160px;
     margin-top: -13%;
     margin-left: 20%;
     border: 4px #E9482B;
@@ -277,7 +277,7 @@
   #step-1-title, #step-2-title, #step-3-title, #step-4-title, #step-5-title, #a-few-words-title {
     margin-bottom: 5px;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 18px;
   }
 
   #create-acc-and-start-now-div {
@@ -290,23 +290,23 @@
 
   #start-now-btn {
     width: 120px;
-    height: 50px;
-    font-size: 30px;
+    height: 40px;
+    font-size: 16px;
     border: 1px solid #E9482B;
     box-sizing: border-box;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
   #a-few-words-link {
-    font-size: 12px;
+    font-size: 10px;
     text-decoration: underline;
   }
 
   #resources-btn {
-    width: 180px;
-    height: 40px;
-    font-size: 20px;
-    line-height: 40px;
+    width: 120px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
   }
 
   #currently-unavailable {
@@ -314,33 +314,34 @@
   }
 
   #a-few-words-title {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   #justify-text {
     text-align: justify;
   }
-  
+
   #single-communities-input {
-    width: 200px;
-    height: 40px;
+    width: 160px;
+    height: 30px;
   }
   
   #single-communities-form-submit-btn {
-    width: 120px;
-    height: 40px;
-    line-height: 40px;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
     margin-left: 5px;
+    font-size: 14px;
   }
 
   #have-a-question {
-    font-size: 26px;
+    font-size: 22px;
     margin: 0;
   }
 
   #send-us-an-email-btn {
-    width: 200px;
-    height: 40px;
-    font-size: 16px;
+    width: 180px;
+    height: 30px;
+    font-size: 14px;
   }
 }

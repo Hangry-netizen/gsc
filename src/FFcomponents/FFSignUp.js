@@ -48,38 +48,38 @@ const FFSignUp = ({}) => {
   }
 
   return (
-    <div className="sign-up">
-      <span className="sign-up-title">
-        <div className="create">CREATE</div>
-        <div className="FF-account">
-        <div className="FF">FAITHFUL FRIEND</div>
-        <div className="account">account</div>
-        </div>
-      </span>
+    <div id="sign-up-containter" className="color-blue text-align-center">
+      <div id="sign-up-title">
+        <div id="create" className="bold">CREATE</div>
+        <div id="FF">FAITHFUL FRIEND</div>
+        <div id="account">account</div>
+      </div>
+      <div id="error-div">
       {message && <Alert variant="success">{message}</Alert>}
       {error && <Alert variant="danger" className="font-size-small">{error}</Alert>}
+      </div>
       <form onSubmit={handleSignUp}>
-        <div className="sign-up-input-fields">
+        <div className="sign-up-input-field">
           <label className="labels">email</label>
           <input className="sign-up-input" type="email" onChange={e => setEmail(e.target.value)} />
         </div>
-        <div className="sign-up-input-fields">
+        <div className="sign-up-input-field">
           <label className="labels">password</label>
           <input className="sign-up-input" type="password" onChange={e => setPassword(e.target.value)} />
         </div>
-        <div className="sign-up-input-fields">
+        <div className="sign-up-input-field">
           <label className="labels">re-enter password</label>
           <input className="sign-up-input" type="password" onChange={e => setReEnterPassword(e.target.value)} />
         </div>
-        <div className="sign-up-input-fields">
+        <div className="sign-up-input-field">
           <label className="labels">your name</label>
           <input className="sign-up-input" type="name" onChange={e => setName(e.target.value)} />
         </div>
-        <div className="sign-up-input-fields">
+        <div className="sign-up-input-field">
           <label className="labels">who told you <br></br>about this site</label>
           <input className="sign-up-input" type="text" onChange={e => setReferral(e.target.value)} />
         </div>
-        <button className="hidden-submit-btn" disabled={isLoading} type="submit"></button>
+        <button id="sign-up-enter-btn" className="blue-button" disabled={isLoading} type="submit">Enter</button>
       </form>
     </div>
   )

@@ -6,7 +6,7 @@ import { useAuth } from "../contexts/AuthContext"
 export default function Step1() {
   const { currentUser } = useAuth()
   return (
-    <div id="step-1" className="bg-blue text-align-left homepage-container-padding">
+    <div id="step-1" className="bg-blue text-align-left homepage-container-padding-font">
       <h1 id="step-1-title" className="color-red">STEP 1: The Entry</h1>
       <div className="color-red">With your Good Single Christian Friend's permission, tell us about your GSCF!</div>
       <br />
@@ -24,12 +24,12 @@ export default function Step1() {
             </Link>
           }
           <div>
-            <HashLink smooth to="#a-few-words-from-us" id="a-few-words-link" className="font-size-small-mid color-red">Read A FEW WORDS FROM US before proceeding</HashLink>
+            <HashLink smooth to="#a-few-words-from-us" id="a-few-words-link" className="color-red font-size-small">Read A FEW WORDS FROM US before proceeding</HashLink>
           </div>
         </div>
       </div>
       <br />
-      <div id="create-gsc-txt" className="color-grey">Create a profile for you GSCF<br />(appear anonymous or link a social media account)</div>
+      <div id="create-gsc-txt" className="color-grey">Create a profile for you GSCF (appear anonymous or link a social media account)</div>
 
     </div>
   )

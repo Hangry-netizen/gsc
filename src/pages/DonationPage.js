@@ -11,7 +11,7 @@ export default function DonationPage() {
       <div id="donation-info" className="color-red padding-left">DONATION INFO</div>
       <p id="donation-p" className="color-blue">
         To cover our cost of running this service, we ask for a small donation for each GSC profile created. Click for transfer details for your country.
-        <span className="color-red font-size-medium"> *payment info will be updated later</span>
+        <span className="color-red"> *payment info will be updated later</span>
       </p>
       <p id="donation-p" className="color-blue">
         If we do have surplus, donations will be channeled to fund similar ventures.

@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Question() {
   return (
-    <div id="question" className="bg-blue text-align-center homepage-container-padding">
+    <div id="question" className="bg-blue text-align-center homepage-container-padding-font">
       <h2 id="have-a-question" className="color-red">Have a question for us?</h2>
       <span className="text-align-center">
         <a href="mailto:matchesup@gmail.com">

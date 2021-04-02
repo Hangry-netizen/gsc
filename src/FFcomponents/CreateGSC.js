@@ -68,15 +68,15 @@ export default function CreateGSC() {
       <Modal show={show} onHide={handleClose}>
         <Modal.Header className="bg-beach">
           <Modal.Title>
-            <div className="color-red font-size-large bold">Create A New GSCF Profile</div>
+            <div className="color-red bold">Create A New GSCF Profile</div>
           </Modal.Title>
         </Modal.Header>
         <Modal.Body className="bg-beach">
           <Form onSubmit={e => handleSubmit(e)}>
             <div>
-              <label className="color-blue font-size-medium">Enter GSCF's Name: </label>
-              <input className="font-size-medium" type="name" onChange={e => setName(e.target.value)} />
-              <div id="use-this-name" className="color-blue font-size-small-mid">Please use this name when you fill out the form for your GSCF</div>
+              <label className="color-blue">Enter GSCF's Name: </label>
+              <input type="name" onChange={e => setName(e.target.value)} />
+              <div id="use-this-name" className="color-blue" >Please use this name when you fill out the form for your GSCF</div>
             </div>
             <div>
               {error && <Alert className="color-red font-size-small">{error}</Alert>}

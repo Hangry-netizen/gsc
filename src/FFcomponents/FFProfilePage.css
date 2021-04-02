@@ -11,10 +11,10 @@
 
 #create-gsc-btn {
   box-sizing: border-box;
-  height: 80px;
-  line-height: 65px;
+  height: 60px;
+  line-height: 42px;
   width: auto;
-  padding: 10px 40px;
+  padding: 10px 30px;
   text-align: center;
   border: 1px solid #E9482B;
   box-sizing: border-box;
@@ -58,8 +58,8 @@
 
 @media(max-width: 1024px) {
   #create-gsc-btn {
-    width: 700px;
-    height: 150px;
+    width: 715px;
+    height: 60px;
   }
 
   #create-gscf-btn {

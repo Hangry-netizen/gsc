@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Step3() {
   return (
-    <div id="step-3" className="bg-blue text-align-left homepage-container-padding">
+    <div id="step-3" className="bg-blue text-align-left homepage-container-padding-font">
       <h1 id="step-3-title" className="color-red">STEP 3: The Research</h1>
       <div className="color-red">Select up to three candidates every month to receive your GSCF's contact!</div>
       <br />
