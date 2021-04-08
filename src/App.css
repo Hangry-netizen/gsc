@@ -1,13 +1,12 @@
 /*navbar height = 7vh*/
 
 .login-page {
-  display: flex;
-  flex-direction: row;
+  display: block;
 }
 
 body {
   font-family: Josefin Sans !important;
-  font-size: 22px !important;
+  font-size: 20px !important;
   background-color: #fad4cd !important;
 }
 
@@ -22,15 +21,15 @@ body {
   }
 
   .font-size-large {
-    font-size: 20px !important;
+    font-size: 22px !important;
   }
   .font-size-medium {
     font-size: 18px !important;
   }
+}
 
-  .font-size-small-mid {
-    font-size: 16px !important;
-  }
+.font-size-large {
+  font-size: 30px;
 }
 
 .font-size-small {

@@ -31,7 +31,7 @@
   font-size: 30px;
 }
 
-#step-1-title, #step-2-title, #step-3-title, #step-4-title, #step-5-title, #a-few-words-title {
+#step-1-title, #step-2-title, #step-3-title, #step-4-title, #step-5-title {
   margin-bottom: 5px;
   font-weight: 700;
   font-size: 40px;
@@ -39,7 +39,7 @@
 
 #for-people {
   margin-top: 10px;
-  line-height: 35px;
+  line-height: inherit;
 }
 
 #to-cover-cost {
@@ -116,7 +116,7 @@
 }
 
 #links-in-a-few-words {
-  line-height: 50px;
+  line-height: inherit;
 }
 
 #single-communities-form {
@@ -142,7 +142,6 @@
 #single-communities-form-submit-btn {
   width: 150px;
   height: 50px;
-  background-color: rgb(30, 54, 92);
   border: none;
   border-radius: 25px;
   box-sizing: border-box;
@@ -332,6 +331,10 @@
     line-height: 30px;
     margin-left: 5px;
     font-size: 14px;
+  }
+
+  #alert-div {
+    text-align: left;
   }
 
   #have-a-question {

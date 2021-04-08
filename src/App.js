@@ -4,6 +4,7 @@ import './App.css';
 import Navbar from './NavComponents/Navbar';
 import HomePage from './pages/HomePage';
 import FFLoginPage from './pages/FFLoginPage';
+import FFSignUpPage from './pages/FFSignUpPage';
 import ForgotPasswordPage from "./pages/ForgotPasswordPage";
 import DonationPage from './pages/DonationPage';
 import FFProfilePage from './pages/FFProfilePage';
@@ -18,15 +19,17 @@ function App() {
       <Navbar />
       <Switch>
         <Route exact path="/"><HomePage /></Route>
-        <Route exact path="/login"><FFLoginPage /></Route>
-        <Route exact path="/forgot-password"><ForgotPasswordPage /></Route>
         <Route exact path="/donation-info"><DonationPage /></Route>
         {
         currentUser
         ?
         <Route exact path="/my-good-single-christian-friends"><FFProfilePage /></Route>
         :
-        null
+        <>
+          <Route exact path="/login"><FFLoginPage /></Route>
+          <Route exact path="/sign-up"><FFSignUpPage /></Route>
+          <Route exact path="/forgot-password"><ForgotPasswordPage /></Route>
+        </>
         }
 
         <Redirect to="/" />

@@ -1,0 +1,143 @@
+#sign-up-container {
+  display: block;
+  box-sizing: border-box;
+  width: 50vw !important;
+  height: calc(100vh - 70px);
+}
+
+@media(max-width: 720px) {
+  #sign-up-container {
+    height: calc(100vh - 50px);
+  }
+}
+
+#sign-up-title {
+  display: block;
+  margin: 5vh auto 5vh;
+  text-align: center;
+}
+
+#create {
+  font-size: 40px;
+  line-height: 40px;
+}
+
+#FF, #account {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+#sign-up-alert-div {
+  box-sizing: border-box;
+}
+
+#sign-up-form {
+  margin: auto;
+  text-align: center;
+}
+
+.sign-up-input-field {
+  box-sizing: border-box;
+  display: flex;
+  width: 50vw;
+  margin-bottom: 2%;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sign-up-labels {
+  text-align: right;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 22px;
+  font-size: 22px;
+  padding-right: 5%;
+  display: block;
+  box-sizing: border-box;
+  width: 22vw;
+  margin-bottom: 0;
+}
+
+.sign-up-input {
+  background: linear-gradient(0deg, #FFFBFB, #FFFBFB), #FFFBFB;
+  border: 1px solid #FFFBFB;
+  display: block;
+  box-sizing: border-box;
+  width: 220px;
+  height: 45px;
+  font-size: large;
+  margin: 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.sign-up-input:focus {
+  outline: #1E365C;
+}
+
+#sign-up-enter-btn {
+  width: 200px;
+  height: 45px;
+  margin-top: 0%;
+}
+
+#sign-up-page-login-link {
+  margin-top: 5%;
+  margin-bottom: 30px;
+}
+
+#sign-up-page-login-link:hover {
+  color: #e9482b;
+  text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+  #sign-up-enter-btn {
+    margin-top: 2%;
+  }
+}
+
+@media (max-width: 720px) {
+  #create {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  
+  #FF, #account {
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  .sign-up-input-field {
+    box-sizing: border-box;
+    display: block;
+    width: 200px;
+    margin-bottom: 2%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sign-up-labels {
+    text-align: left;
+    line-height: 20px;
+    font-size: 20px;
+    padding-right: 5%;
+    display: block;
+    box-sizing: border-box;
+    width: 200px;
+    margin-bottom: 2%;
+  }
+  
+  .sign-up-input {
+    width: 200px;
+    height: 35px;
+    font-size: large;
+    margin-bottom: 10%;
+  }
+
+  #sign-up-enter-btn {
+    width: 200px;
+    margin-top: 4%;
+  }
+}

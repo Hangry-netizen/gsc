@@ -75,7 +75,7 @@ export default function CreateGSC() {
           <Form onSubmit={e => handleSubmit(e)}>
             <div>
               <label className="color-blue">Enter GSCF's Name: </label>
-              <input type="name" onChange={e => setName(e.target.value)} />
+              <input id="create-gsc-input" type="name" onChange={e => setName(e.target.value)} />
               <div id="use-this-name" className="color-blue" >Please use this name when you fill out the form for your GSCF</div>
             </div>
             <div>
@@ -84,7 +84,7 @@ export default function CreateGSC() {
             </div>
             <div className="text-align-right">
               <Button variant="secondary" id="create-gsc-close-btn" onClick={handleClose}>Close</Button>
-              <Button id="create-gsc-modal-confirm-btn" disabled={isLoading}>Confirm</Button>
+              <Button id="create-gsc-modal-confirm-btn" disabled={isLoading} type="submit">Confirm</Button>
             </div>
           </Form>
         </Modal.Body>

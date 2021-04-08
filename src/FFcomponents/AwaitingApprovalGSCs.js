@@ -27,7 +27,6 @@ export default function AwaitingApprovalGSCs() {
           <div>
             <button className="gsc-profile-button color-red Essays1743" key="{AwaitingGSC}">{AwaitingGSC.gsc_name}</button>
             <div id="awaiting-txt" className="color-red font-size-small">Awaiting consent and screening</div>
-
           </div>
           )
         }

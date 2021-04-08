@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import { useAuth } from "../contexts/AuthContext";
 import CreateGSC from "../FFComponents/CreateGSC";
 import AwaitingApprovalGSCs from "../FFComponents/AwaitingApprovalGSCs";
@@ -14,7 +15,10 @@ export default function FFProfilePage() {
         Welcome, {currentUser.displayName}!
       </div>
       <CreateGSC />
-      <div id="manage-profiles" className="color-blue bold">MANAGE GSCF PROFILES</div>
+      <div id="ff-profile-page-donation" className="color-red">
+        To cover our cost of running this service, we ask for a small donation of a minimum of RM5/SGD3/PHP50 for each GSC profile created. <Link to="/donation-info" id="ff-page-donation-info-link">See donation info.</Link> Thank you for helping us maintain this service for the body of Christ!
+      </div>
+      <div id="manage-profiles" className="color-blue bold font-size-large">MANAGE GSCF PROFILES</div>
       <AwaitingApprovalGSCs />
       <ExistingGSCs />
     </div>
