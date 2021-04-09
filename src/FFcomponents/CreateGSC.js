@@ -3,6 +3,7 @@ import axios from 'axios';
 import { url } from "../App";
 import { Modal, Form, Button, Alert } from 'react-bootstrap';
 import { useAuth } from "../contexts/AuthContext";
+import { Link } from 'react-router-dom';
 
 export default function CreateGSC() {
   const [name, setName] = useState("")
@@ -49,7 +50,7 @@ export default function CreateGSC() {
   }
 
   const openFormInNewTab = () => {
-    const newWindow = window.open("https://forms.gle/BKGJJkXwCEannqTc8", "_blank", "noopener noreferrer")
+    const newWindow = window.open("https://forms.gle/3haPadDSuu9LDbwy7", "_blank", "noopener noreferrer")
     if (newWindow) newWindow.opener = null
   }
 
@@ -76,8 +77,28 @@ export default function CreateGSC() {
             <div>
               <label className="color-blue">Enter GSCF's Name: </label>
               <input id="create-gsc-input" type="name" onChange={e => setName(e.target.value)} />
-              <div id="use-this-name" className="color-blue" >Please use this name when you fill out the form for your GSCF</div>
             </div>
+            <div id="use-this-name" className="color-blue font-size-small" >Please use this name when you fill out the form for your GSCF</div>
+            <Form.Group>
+              <Form.Check
+                required
+                label={
+                  <div className="color-red">I vouch for this person's character and will take responsibility to follow up with them if anything untoward happens.</div>
+                }
+                feedback="You must agree before submitting."
+              />
+              <Form.Check
+                required
+                label={
+                  <div className="color-red">
+                    <span>I have read, understand, and agree to the Terms of Use of MatchesUp and its privacy policy (</span>
+                    <Link to="/terms-and-privacy-policy" className="color-red underline">www.matchesup.com/terms-and-privacy-policy</Link>
+                    <span>).</span>
+                  </div>
+                }
+                feedback="You must agree before submitting."
+              />
+            </Form.Group>
             <div>
               {error && <Alert className="color-red font-size-small">{error}</Alert>}
               {message && <Alert className="color-green font-size-small">{message}</Alert>}

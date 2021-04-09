@@ -27,6 +27,10 @@
   margin-left: 10px;
 }
 
+#use-this-name {
+  margin: 5% 0;
+}
+
 #create-gsc-close-btn {
   margin-right: 30px;
 }
@@ -84,12 +88,6 @@
 
   #create-gscf-btn {
     display: none;
-  }
-
-  #use-this-name {
-    width: 380px;
-    margin-right: auto;
-    margin-left: auto;
   }
 }
 

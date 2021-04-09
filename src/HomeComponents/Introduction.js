@@ -4,7 +4,7 @@ import MatchesUpLogo from "../utils/MatchesUpLogo.png"
 
 export default function Introduction() {
   return (
-    <div id="introduction" className="bg-beach homepage-container-padding-font">
+    <div id="introduction" className="bg-beach homepage-container-padding">
       <div id="intro-flex">
         <div id="intro-left">
           <img src={MatchesUpLogo} alt="MatchesUpLogo" id="matches-up-logo-intro"/>

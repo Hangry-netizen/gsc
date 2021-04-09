@@ -39,10 +39,10 @@ const ForgotPassword = () => {
           <label className="forgot-password-label">email</label>
           <input className="forgot-password-input" type="email" onChange={e => setEmail(e.target.value)} />
         </div>
-        <button id="submit-btn" className="red-button" disabled={isLoading} type="submit">SUBMIT</button>
+        <button id="forgot-page-submit-btn" className="red-button" disabled={isLoading} type="submit">SUBMIT</button>
       </form>
       <div id="login-link-div">
-        <Link id="forgot-password-login-link" to="/login">back to login?</Link>
+        <Link id="forgot-password-login-link" to="/login" className="underline">back to login?</Link>
       </div>
     </div>
   )

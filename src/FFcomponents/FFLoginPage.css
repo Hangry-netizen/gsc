@@ -90,9 +90,13 @@
   margin-bottom: 1%;
 }
 
-#sign-up-link:hover {
+#sign-up-link {
   text-decoration: underline;
   color: inherit;
+}
+
+#sign-up-link:hover {
+  color: #fad4cd;
 }
 
 @media (max-width: 1024px) {

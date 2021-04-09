@@ -1,7 +1,7 @@
 - Global font size 20px
 - Login page smaller overall
 - What is MatchesUp desc (20px-according to global)
-- A Few Words title smaller (changed from h1 to h2 tag)
+- A Few Words title smaller (changed from h1 to h3 tag)
 - Single community not submitting (working now)
 - Edit to homepage - the subtitle for Step 3: "Review the profiles of potential matches with your GSCF!"
 - FF Profile Page (donation info from homepage below create btn)

@@ -58,7 +58,7 @@ const FFLoginPage = () => {
         <div>
           <button id="login-enter-btn" className="red-button" disabled={isLoading} type="submit">Enter</button>
           <div>
-            <Link id="sign-up-link" to="/sign-up" className="color-red">New? Sign up here!</Link>
+            <Link id="sign-up-link" to="/sign-up" className="color-red bold">New? Sign up here!</Link>
           </div>
         </div>
       </form>

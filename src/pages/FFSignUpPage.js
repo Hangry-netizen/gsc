@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Alert } from 'react-bootstrap';
 import { useAuth } from '../contexts/AuthContext'
 import { useHistory, Link } from "react-router-dom";
-import { mailgun } from "../mailgun"
 
 import '../FFComponents/FFSignUpPage.css'
 
@@ -38,28 +37,12 @@ const FFSignUpPage = ({ showLogin, setShowLogin, showSignUp, setShowSignUp }) =>
       setError("")
       setIsLoading(true)
       await signup(email, password, name, referral)
-        sendValidationEmail()
         setMessage("Successfully created an account and logged in")
         history.push("/")
     } catch {
       setError("Failed to create an account")
     }
     setIsLoading(false)
-  }
-
-  function sendValidationEmail() {
-    const data = {
-      from: 'Excited User <hangrylydevour@gmail.com>',
-      to: 'queenaleechin@gmail.com, hangrylydevour@gmail.com',
-      subject: 'Test 3',
-      text: 'Testing some Mailgun awesomness!'
-    };
-    mailgun.messages().send(data, function (error, body) {
-      if (error) {
-        console.log(error)
-      }
-      console.log(body);
-    });
   }
 
   return (
@@ -96,7 +79,7 @@ const FFSignUpPage = ({ showLogin, setShowLogin, showSignUp, setShowSignUp }) =>
         </div>
         <button id="sign-up-enter-btn" className="red-button" disabled={isLoading} type="submit">Enter</button>
         <div>
-          <Link id="sign-up-page-login-link" to="/login" className="color-red">Already have an account? Login here!</Link>
+          <Link id="sign-up-page-login-link" to="/login" className="color-red bold">Already have an account? Login here!</Link>
         </div>
       </form>
     </div>

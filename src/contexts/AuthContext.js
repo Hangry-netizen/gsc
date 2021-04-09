@@ -24,9 +24,6 @@ export function AuthProvider({ children }) {
             })
         })
     }
-    function verification() {
-        return auth.currentUser.sendEmailVerification()
-    }
     function login(email, password) {
         return auth.signInWithEmailAndPassword(email, password)
     }
@@ -50,8 +47,7 @@ export function AuthProvider({ children }) {
         signup,
         login,
         logout,
-        resetPassword,
-        verification,
+        resetPassword
     }
     return (
         <AuthContext.Provider value={value}>

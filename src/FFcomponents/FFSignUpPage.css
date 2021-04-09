@@ -79,16 +79,15 @@
   width: 200px;
   height: 45px;
   margin-top: 0%;
+  margin-bottom: 1%;
 }
 
 #sign-up-page-login-link {
-  margin-top: 5%;
-  margin-bottom: 30px;
+  text-decoration: underline;
 }
 
 #sign-up-page-login-link:hover {
-  color: #e9482b;
-  text-decoration: underline;
+  color: #1E365C;
 }
 
 @media (max-width: 1024px) {
@@ -137,7 +136,12 @@
   }
 
   #sign-up-enter-btn {
-    width: 200px;
+    width: 120px;
+    height: 35px;
     margin-top: 4%;
+  }
+
+  #sign-up-page-login-link {
+    padding-bottom: 20px;
   }
 }

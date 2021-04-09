@@ -39,7 +39,7 @@ export default function SingleCommunities() {
   }
 
   return (
-    <div id="single-communities" className="bg-beach text-align-justify homepage-container-padding-font">
+    <div id="single-communities" className="bg-beach text-align-justify homepage-container-padding">
       <p className="color-blue">We are considering looking for ways to connect singles who are interested in forming singles communities that pursue God together (that may mean living together or friends who hang out physically/virtually).</p>
       <div className="color-red">Leave your email address here if you'd like to receive information when this initiative takes off.</div>
       <form onSubmit={e => handleSubmit(e)} id="single-communities-form">
