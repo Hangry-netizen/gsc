@@ -7,6 +7,5 @@
 - FF Profile Page (donation info from homepage below create btn)
 - Create GSCF "confirm" button not submitting (working now)
 - Login page mobile responsiveness
-
-Own FF login (forget password, email verification, account deletion)
-Check all pages and all buttons 
+- Added terms and privacy page
+- Edited create new GSCF modal to have checkboxes

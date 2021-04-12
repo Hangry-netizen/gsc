@@ -92,7 +92,7 @@ export default function CreateGSC() {
                 label={
                   <div className="color-red">
                     <span>I have read, understand, and agree to the Terms of Use of MatchesUp and its privacy policy (</span>
-                    <Link to="/terms-and-privacy-policy" className="color-red underline">www.matchesup.com/terms-and-privacy-policy</Link>
+                    <Link to="/terms-and-privacy-policy" target="_blank" className="color-red underline">www.matchesup.com/terms-and-privacy-policy</Link>
                     <span>).</span>
                   </div>
                 }

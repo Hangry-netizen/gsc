@@ -9,15 +9,15 @@ export default function TermsAndPrivacyPage() {
       <div style={{boxSizing:"border-box", width:"85%", margin:"auto"}}>
         <div className="color-blue text-align-left" style={{marginBottom: "5%"}}>
           <span>Download and read our full Terms and Conditions of Use: </span>
-          <link href={Terms}>
+          <a href={Terms} target="_blank">
             <button className="color-red underline" style={{border:"none", background:"transparent"}}>Terms_and_Conditions_v1.pdf</button>
-          </link>
+          </a>
         </div>
         <div className="color-blue text-align-left" style={{marginBottom: "5%"}}>
         <span>Download and read our Privacy Policy: </span>
-          <link href={Privacy}>
+          <a href={Privacy} target="_blank">
             <button className="color-red underline" style={{border:"none", background:"transparent"}}>Privacy_Policy_v1.pdf</button>
-          </link>
+          </a>
         </div>
       </div>
     </div>

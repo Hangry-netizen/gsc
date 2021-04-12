@@ -13,6 +13,7 @@ import { useAuth } from "./contexts/AuthContext";
 
 export const url = 'http://localhost:5000/api/v1';
 /*https://matches-up.herokuapp.com/api/v1*/
+
 function App() {
   const { currentUser } = useAuth()
   return (
@@ -20,7 +21,7 @@ function App() {
       <Navbar />
       <Switch>
         <Route exact path="/"><HomePage /></Route>
-        <Route exact path="/terms-and-privacy-policy"><TermsAndPrivacyPage /></Route>
+        <Route path="/terms-and-privacy-policy"><TermsAndPrivacyPage /></Route>
         <Route exact path="/donation-info"><DonationPage /></Route>
         {
         currentUser
